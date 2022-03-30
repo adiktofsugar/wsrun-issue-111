@@ -1,0 +1,23 @@
+{
+  "name": "wstest",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "packages/package-one",
+    "packages/package-two"
+  ],
+  "scripts": {
+    "test": "wsrun --concurrency 4 --fast-exit --collect-logs -c test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "wsrun": "^5.2.4"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
